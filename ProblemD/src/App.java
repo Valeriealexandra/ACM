@@ -11,8 +11,6 @@ public class App {
         int h = (Integer.valueOf(split[0]));
         int v = (Integer.valueOf(split[1]));
         
-//        System.out.println(h);
-//        System.out.println(v);
         double result;
         result = h / Math.sin(Math.toRadians(v));
         System.out.println((int)Math.ceil(result));
