@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.lang.Math;
-public class App {
+public class ProblemFaktor {
 	public static void main(String[] args) {
 		try (Scanner scan = new Scanner(System.in))
 				{
@@ -8,14 +8,12 @@ public class App {
         number = scan.nextLine();
         String[] split = number.split("\\s+");
 		
-        int h = (Integer.valueOf(split[0]));
-        int v = (Integer.valueOf(split[1]));
+        int numberarticles = (Integer.valueOf(split[0]));
+        int rounding = (Integer.valueOf(split[1]));
         
-//        System.out.println(h);
-//        System.out.println(v);
-        double result;
-        result = h / Math.sin(Math.toRadians(v));
-        System.out.println((int)Math.ceil(result));
+        int result;
+        result = (numberarticles * (rounding -1) + 1); 
+        System.out.println(result);
 				}
 		catch (Exception e) {
 			// TODO: handle exception
